@@ -4,7 +4,7 @@ import HeroBannerImage from "../assets/images/banner.png";
 const HeroBanner = () => {
   return (
     <Box
-      sx={{ mt: { lg: "200px", xs: "70px" }, ml: { sm: "50px" } }}
+      sx={{ mt: { lg: "130px", xs: "70px" }, ml: { sm: "50px" } }}
       position="relative"
       p="20px"
     >
@@ -22,10 +22,16 @@ const HeroBanner = () => {
       <Typography fontSize="22px" lineHeight="35px" mb={4}>
         Check out the most effective Exercises!
       </Typography>
-      <Button variant="contained" href="#exercises" color="error">
+      <Button
+        variant="contained"
+        href="#exercises"
+        sx={{ backgroundColor: "#ff2625", padding: "10px" }}
+        color="error"
+      >
         Explore Exercises
       </Button>
       <Typography
+        mt={10}
         fontWeight={600}
         color="#FF2625"
         sx={{ opacity: 0.1, display: { lg: "block", xs: "none" } }}
