@@ -6,8 +6,14 @@ const Footer = () => {
     <Box mt="80px" bgcolor="#fff3f4">
       <Stack gap="40px" alignItems="center" px="40px" pt="24px">
         <img src={Logo} alt="logo" width="200px" height="40px" />
-        <Typography variant="h5" pb="40px" mt="20px">
-          Made with 💖 by Vibhour Sharma
+        <Typography
+          variant="h5"
+          pb="40px"
+          mt="20px"
+          fontStyle="italic"
+          color="#808080"
+        >
+          "Made with 💖 by Vibhour Sharma"
         </Typography>
       </Stack>
     </Box>

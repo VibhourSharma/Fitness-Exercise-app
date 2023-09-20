@@ -1,6 +1,5 @@
 import { Stack, Typography } from "@mui/material";
 import Icon from "../assets/icons/gym.png";
-console.log(Icon);
 
 const BodyPart = ({ item, setBodyPart, bodyPart }) => {
   return (
