@@ -10,13 +10,11 @@ This app leverages the power of React, React Hooks, React Router DOM, Material U
 
 - **React-Powered**: App is built with React, ensuring a smooth and interactive user interface.
 
-- **Material UI Styling**: We've used Material UI to give our app a sleek and modern look.
+- **Material UI Styling**: I've used Material UI to give our app a sleek and modern look.
 
-- **API Integration**: We've integrated two RAPID APIs to provide a rich collection of exercise data for users.
+- **API Integration**: I've integrated two RAPID APIs to provide a rich collection of exercise data for users.
 
 - **User-Friendly Navigation**: With React Router DOM, users can easily navigate through the app.
-
-- **Track Your Progress**: Keep track of your fitness journey and monitor your progress effortlessly.
 
 ## What I Learned
 
