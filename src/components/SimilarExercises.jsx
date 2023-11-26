@@ -1,42 +1,52 @@
-import { Box, Stack, Typography } from "@mui/material";
+import { Typography, Box, Stack } from "@mui/material";
 import HorizontalScrollbar from "./HorizontalScrollbar";
 import Loader from "./Loader";
 
-const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
-  return (
-    <Box sx={{ mt: { lg: "150px", xs: "0" } }}>
-      <Typography variant="h3" mb={10}>
-        Exercises that target the{" "}
-        <span style={{ color: "#FF2625" }}> same muscle group </span>
-      </Typography>
-      <Stack
-        direction="row"
-        sx={{ p: "2", position: "relative" }}
-        onClick={{ scrollTo: "top" }}
-      >
-        {targetMuscleExercises.length ? (
-          <HorizontalScrollbar data={targetMuscleExercises} />
-        ) : (
-          <Loader />
-        )}
-      </Stack>
-      <Typography variant="h3" mb={10} mt={5}>
-        Exercises that use the{" "}
-        <span style={{ color: "#FF2625" }}>same Equipment</span>
-      </Typography>
-      <Stack
-        direction="row"
-        sx={{ p: "2", position: "relative" }}
-        onClick={{ scrollTo: "top" }}
-      >
-        {equipmentExercises.length ? (
-          <HorizontalScrollbar data={equipmentExercises} />
-        ) : (
-          <Loader />
-        )}
-      </Stack>
-    </Box>
-  );
-};
+const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => (
+  <Box sx={{ mt: { lg: "100px", xs: "0px" } }}>
+    <Typography
+      sx={{ fontSize: { lg: "44px", xs: "25px" }, ml: "20px" }}
+      fontWeight={700}
+      color="#000"
+      mb="33px"
+    >
+      Similar{" "}
+      <span style={{ color: "#FF2625", textTransform: "capitalize" }}>
+        Target Muscle
+      </span>{" "}
+      exercises
+    </Typography>
+    <Stack direction="row" sx={{ p: 2, position: "relative" }}>
+      {targetMuscleExercises.length !== 0 ? (
+        <HorizontalScrollbar data={targetMuscleExercises} />
+      ) : (
+        <Loader />
+      )}
+    </Stack>
+    <Typography
+      sx={{
+        fontSize: { lg: "44px", xs: "25px" },
+        ml: "20px",
+        mt: { lg: "100px", xs: "60px" },
+      }}
+      fontWeight={700}
+      color="#000"
+      mb="33px"
+    >
+      Similar{" "}
+      <span style={{ color: "#FF2625", textTransform: "capitalize" }}>
+        Equipment
+      </span>{" "}
+      exercises
+    </Typography>
+    <Stack direction="row" sx={{ p: 2, position: "relative" }}>
+      {equipmentExercises.length !== 0 ? (
+        <HorizontalScrollbar data={equipmentExercises} />
+      ) : (
+        <Loader />
+      )}
+    </Stack>
+  </Box>
+);
 
 export default SimilarExercises;
